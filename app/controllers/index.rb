@@ -1,7 +1,7 @@
 enable :sessions
 
 get '/' do
-
+  @categories = Category.all
   erb :index
 end
 
@@ -70,9 +70,10 @@ end
 
 get '/logout' do 
   session.clear
-  erb :index
+  redirect '/'
 end
 
 get '/login' do
+  
   erb :_login
 end
