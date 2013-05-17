@@ -1,0 +1,15 @@
+<div class="navbar">
+  <div class="navbar-inner">  
+    <ul class="nav">
+      <li><a href='/'>Home</a></li>
+      <li><a href='/user/create'>Create Account</a></li>
+      <li id="login"><a href='/login'>Login</a></li>
+      <% if session[:user_id]%>
+        <li><a href="/user/<%=session[:user_id]%>">Profile</a></li>
+      
+        <li><a href='/logout'>Logout</a></li>
+        <li><a href='/user/<%=current_user.id%>'>Welcome <%= current_user.email %>!</a></li>
+      <% end %>
+    </ul>
+  </div>
+</div>

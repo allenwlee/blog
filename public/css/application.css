@@ -1,9 +1,7 @@
-.container {
-  margin: 20px auto;
-  width: 600px;
-  padding: 0px 20px 20px 20px;
-  border: 1px dotted black;
+.show-grid {
+  background-color: #eee;
 }
-th {
-  text-align: left;
+
+.nav-left {
+  
 }

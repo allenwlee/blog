@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="row_fluid">
+    <div class="span9">
+      <h1>Post</h1>
+      <%@post.title%>
+      <%@post.body%>
+      <%current_user.email%>
+    </div>
+  </div>
+  <div class="span9">
+    <%=erb :_tags, :layout => false %>
+  </div>
+</div>

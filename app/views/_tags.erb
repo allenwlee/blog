@@ -1,0 +1,9 @@
+<div class="row-fluid show-grid">
+  <ul class="nav nav-pills">
+    <% @categories.each do |c| %>
+      <div class="span3">
+        <li><a href='/<%=c.id %>'># <%=c.tag %>
+      </a></li></div>
+    <% end %>
+  </ul>
+</div> 

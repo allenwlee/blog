@@ -1,0 +1,4 @@
+<% @posts.each do |p| %>
+    <%= erb :_post, :locals => { :title => p.title, :body => p.body, :email => User.find(p.id).email } %>  
+  <% end %>
+
